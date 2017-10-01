@@ -1,0 +1,37 @@
+---
+<!-- title: Index page -->
+grid:
+ - text: Date
+   descr: April
+ - text: Tags
+   descr: Website | Desing
+ - text: Comments
+   descr: 4
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	<!-- {# variable example #}
+	<h1>{{title}}</h1> -->
+
+	
+	{% include "partials/_maske.html" %}
+	<div class="wrapper">
+	{# partial example #}
+	{% include "partials/_header.html" %}
+	</div>
+	{% include "partials/_page.html" %}
+	<!-- {# mixin example #}
+	{{mixins.icon('facebook')}}
+ -->
+
+	<!-- {# data usage example #}
+		{% import "data/data.html" as tests %}
+		
+		{% for test in tests.list %}
+		<li>{{test.title}}</li>
+		{% endfor %}
+	{# end of example #} -->
+
+{% endblock %}
