@@ -109,37 +109,56 @@ img
 		color: #e8603c
 
 .blog
-	overflow: hidden
-	position: relative
-	margin: 70px 0 24px
-	+r(490)
-		margin: 120px 0 24px 
-	&__left
-		position: absolute
-		left: 0
-	&__right
-		position: absolute
-		right: 0
-		top: 0
-	
-.block
+	background-color: rgba(232, 96, 60, 0.5)
 	height: 61px
-	width: 220px
-	+r(1400)
-		display: none
-	&_pink
-		background-color: rgba(232, 96, 60, 0.5)
+	margin: 70px 0 24px
 
 .blog-content
 	background-color: #e8603c
-	&__title
-		+font
-		color: white
-		// font-family: 'bebas_neue_regularregular'
-		font-size: 24px
-		font-weight: 400
-		padding: 17px 0 18px 17px
-		
+	// max-width: 940px
+	box-shadow: 0 0 0 10px #fff
+	height: 61px
+
+.h1
+	+font
+	color: white
+	// font-family: 'bebas_neue_regularregular'
+	font-size: 24px
+	font-weight: 400
+	padding: 17px 0 18px 17px
+
+// .blog
+// 	overflow: hidden
+// 	position: relative
+// 	margin: 70px 0 24px
+// 	+r(490)
+// 		margin: 120px 0 24px 
+// 	&__left
+// 		position: absolute
+// 		left: 0
+// 	&__right
+// 		position: absolute
+// 		right: 0
+// 		top: 0
+	
+// .block
+// 	height: 61px
+// 	width: 220px
+// 	+r(1400)
+// 		display: none
+// 	&_pink
+// 		background-color: rgba(232, 96, 60, 0.5)
+
+// .blog-content
+// 	background-color: #e8603c
+// 	&__title
+// 		+font
+// 		color: white
+// 		// font-family: 'bebas_neue_regularregular'
+// 		font-size: 24px
+// 		font-weight: 400
+// 		padding: 17px 0 18px 17px
+
 .post
 	margin-bottom: 57px
 
@@ -347,16 +366,21 @@ img
 		// font-family: 'bebas_neue_regularregular'
 	.is-active
 		background-color: #e8663c
-		
+
 .slider
 	max-width: 670px
 
 .slider .slick-prev
-	background: url('../img/previous.png')
+	background: url('../img/previous.png') no-repeat
+	background-size: cover
 	z-index: 100
 	width: 35px
 	height: 52px
 	left: 18px
+	+r(550)
+		width: 15px
+		height: 24px
+		background-size: cover
 
 .slider .slick-prev:before,
 .slider .slick-next:before
@@ -367,13 +391,27 @@ img
 
 .slider .slick-next
 	right: 18px
-	background: url('../img/next.png')
+	background: url('../img/next.png') no-repeat
+	background-size: cover
 	z-index: 100
 	width: 35px
 	height: 52px
+	+r(550)
+		width: 15px
+		height: 24px
+		background-size: cover
 
 .slider .slick-next:focus, .slider .slick-next:hover
 	background: url('../img/next.png')
+	background-size: cover
+	+r(550)
+		width: 15px
+		height: 24px
+		background-size: cover
 
 .slider .slick-prev:focus, .slider .slick-prev:hover
 	background: url('../img/previous.png')
+	+r(550)
+		width: 15px
+		height: 24px
+		background-size: cover
