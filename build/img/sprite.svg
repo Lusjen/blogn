@@ -1,6 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-facebook" viewBox="0 0 10 19">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+        <path id="a" d="M193.96 1627.97l-8.43-4.87a3.25 3.25 0 0 0-4.44 1.19l-5.68 9.83a3.25 3.25 0 0 0 1.2 4.44l1.4.8 1.62-2.8a1.62 1.62 0 0 1-.6-2.22l4.06-7.03a1.62 1.62 0 0 1 2.22-.59l5.62 3.25c.78.44 1.04 1.44.6 2.21l-4.06 7.03a1.62 1.62 0 0 1-2.22.6l-1.62 2.8 1.4.82c1.56.9 3.54.36 4.44-1.2l5.68-9.83c.9-1.55.36-3.54-1.2-4.43zm-15.8 20.86l6.5-11.24a1.62 1.62 0 0 0-2.81-1.63l-6.5 11.25a1.62 1.62 0 1 0 2.82 1.62zm-1.78-6.65l-1.4-.81a3.25 3.25 0 0 0-4.44 1.19l-5.68 9.83a3.25 3.25 0 0 0 1.2 4.44l8.43 4.87c1.55.9 3.53.36 4.43-1.2l5.68-9.83c.9-1.55.36-3.54-1.19-4.43l-1.4-.81-1.63 2.8c.78.45 1.04 1.45.6 2.22l-4.06 7.03a1.62 1.62 0 0 1-2.22.6l-5.62-3.25a1.62 1.62 0 0 1-.6-2.22l4.06-7.03a1.62 1.62 0 0 1 2.22-.59z"/>
+    </defs><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook
     </title>
     <path d="M9.766.157v2.946H8.014c-.64 0-1.071.134-1.295.402-.223.268-.335.67-.335 1.205v2.11h3.27l-.435 3.303H6.384v8.471H2.97v-8.47H.123V6.82H2.97V4.387c0-1.384.387-2.457 1.161-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.941.045 2.544.134z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-link" viewBox="0 0 36 43">
+    
+    <use xlink:href="#a" transform="translate(-162 -1621)"/>
 </symbol></svg>
