@@ -22,7 +22,7 @@
         <!-- <p>Hello from partials/_header.html</p> -->
         <!-- begin wrapper -->
         <!-- begin header -->
-        <div class="header">
+        <div class="header js-background">
           <div class="container">
             <div class="header__left"> <a href="#" class="logo">
 				jet<span class="logo__color">ro</span>
@@ -45,25 +45,12 @@
             <h1 class="h1">Blog</h1>
           </div>
         </div>
-        <!-- <div class="blog">
-	<div class="blog__left">
-		<div class="block block_pink"></div>	
-	</div>
-		<div class="container">
-			<div class="blog-content">
-				<p class="blog-content__title">Blog</p>
-			</div>
-		</div>
-	<div class="blog__right">
-		<div class="block block_pink"></div>		
-	</div>
-</div> -->
         <!-- end block -->
         <!-- begin post -->
         <div class="post section">
           <div class="container">
             <div class="section__left">
-              <div class="icons icons_post-first"> </div>
+              <div class="icons icons_post-copy"> </div>
               <div class="section__photo">
                 <div class="slider js-gallery">
                   <div><img src="img/img.png" alt="logo"></div>
@@ -72,20 +59,18 @@
               </div>
               <div class="content content_post-padd">
                 <div class="content__left">
-                  <div class="grid">
-                    <!-- begin info  -->
-                    <div class="info">
-                      <h3 class="h3">Date</h3> <a href="#" class="info__description">April</a> </div>
-                    <!-- end info-->
-                    <!-- begin info  -->
-                    <div class="info">
-                      <h3 class="h3">Tags</h3> <a href="#" class="info__description">Website | Desing</a> </div>
-                    <!-- end info-->
-                    <!-- begin info  -->
-                    <div class="info">
-                      <h3 class="h3">Comments</h3> <a href="#" class="info__description">4</a> </div>
-                    <!-- end info-->
-                  </div>
+                  <!-- begin info  -->
+                  <div class="info">
+                    <h3 class="h3">Date</h3> <a href="#" class="info__description">April</a> </div>
+                  <!-- end info-->
+                  <!-- begin info  -->
+                  <div class="info">
+                    <h3 class="h3">Tags</h3> <a href="#" class="info__description">Website | Desing</a> </div>
+                  <!-- end info-->
+                  <!-- begin info  -->
+                  <div class="info">
+                    <h3 class="h3">Comments</h3> <a href="#" class="info__description">4</a> </div>
+                  <!-- end info-->
                 </div>
                 <div class="content__right">
                   <div class="article">
@@ -93,14 +78,14 @@
                       <h2 class="h2">Top WordPress Themes of 2012</h2>
                     </div>
                     <div class="article__description">
-                      <p class="text text_margin"> Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide
+                      <p> Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide
                         instructior. Mei no latine praesent forensibus, te sed habemus tacimates, ad ipsum officiis constituto usu. </p>
-                      <p class="text"> Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis
-                        <span class="text__dots">...</span> </p>
+                      <p> Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis
+                        <strong>...</strong> </p>
                     </div>
                   </div>
                 </div>
-                <!-- <div class="line"></div> --></div>
+              </div>
             </div>
             <div class="section__right">
               <div class="features">
@@ -109,7 +94,7 @@
                     <h3 class="h3 h3_size">About Jetro</h3>
                   </div>
                 </div>
-                <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elemen tum imperdiet. Duis sagittis ipsum. </p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elemen tum imperdiet. Duis sagittis ipsum. </p>
               </div>
               <div class="features">
                 <div class="list">
@@ -117,7 +102,14 @@
                     <h3 class="h3 h3_size">Categories</h3>
                   </div>
                 </div>
-                <ul class="link"> <a href="#" class="link__item text">Video <span class="text__number">(3)</span></a> <a href="#" class="link__item text">Sports <span class="text__number">(5)</span></a> <a href="#" class="link__item text">Media <span class="text__number">(2)</span></a>                  <a href="#" class="link__item text">Entertainment <span class="text__number">(7)</span></a> <a href="#" class="link__item text">Life <span class="text__number">(4)</span></a> <a href="#" class="link__item text">Super Cool Stuff <span class="text__number">(8)</span></a>                  </ul>
+                <ul class="link">
+                  <li> <a href="#" class="link__item">Video <span class="link__item_strong">(3)</span></a> </li>
+                  <li> <a href="#" class="link__item">Sports <span class="link__item_strong">(5)</span></a> </li>
+                  <li> <a href="#" class="link__item">Media <span class="link__item_strong">(2)</span></a> </li>
+                  <li> <a href="#" class="link__item">Entertainment <span class="link__item_strong">(7)</span></a> </li>
+                  <li> <a href="#" class="link__item">Life <span class="link__item_strong">(4)</span></a> </li>
+                  <li> <a href="#" class="link__item">Super Cool Stuff <span class="text__number">(8)</span></a> </li>
+                </ul>
               </div>
               <div class="features">
                 <div class="list">
@@ -144,7 +136,7 @@
         <div class="section">
           <div class="container">
             <div class="section__left">
-              <div class="icons icons_post-second"> </div>
+              <div class="icons icons_post-doc"> </div>
               <div class="section__photo">
                 <div> <img src="img/img-jesus.png" alt="jesus"> </div>
               </div>
@@ -171,14 +163,14 @@
                       <h2 class="h2">Jesus Typography Wallpaper Giveaway!</h2>
                     </div>
                     <div class="article__description">
-                      <p class="text text_margin"> Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide
+                      <p> Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide
                         instructior. Mei no latine praesent forensibus, te sed habemus tacimates, ad ipsum officiis constituto usu. </p>
-                      <p class="text"> Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis
-                        <span class="text__dots">...</span> </p>
+                      <p> Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis
+                        <strong>...</strong> </p>
                     </div>
                   </div>
                 </div>
-                <!-- <div class="line"></div> --></div>
+              </div>
             </div>
           </div>
         </div>
@@ -192,11 +184,11 @@
                 <div class="class content__left">
                   <div class="icon-quotes"> <img src="img/quotes-orange.png" alt="quotes"> </div>
                   <div class="feedback__text">
-                    <p class="textual"> Write anything you want here in this quotable area. Something unique you want people to learn about your website or some cool random fact. Its totally up to you. Write anything you want here in this quotable area. Something unique
-                      you want people to learn about your website or some cool random fact. Its totally up to you. </p>
+                    <p> <em>
+								Write anything you want here in this quotable area. Something unique you want people to learn about your website or some cool random fact. Its totally up to you. Write anything you want here in this quotable area. Something unique you want people to learn about your website or some cool random fact. Its totally up to you.
+							</em> </p>
                   </div>
                 </div>
-                <div class="line"></div>
               </div>
             </div>
           </div>
@@ -206,12 +198,12 @@
         <div class="section freebies">
           <div class="container">
             <div class="section__left">
+              <div class="icons"> <svg class="icon icon-link"><use xlink:href="img/sprite.svg#icon-link"></use></svg> </div>
               <div class="content content_freebies-padd">
                 <div class="content__left">
-                  <div class="icons"> <svg class="icon icon-link"><use xlink:href="img/sprite.svg#icon-link"></use></svg> </div>
                   <h2 class="h2">Some of the best freebies on the web</h2> <a href="#" class="freebies__link">www.bestpsdfreebies.com</a>
-                  <p class="text"> Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. </p>
-                  <!-- <div class="line"></div>	 --></div>
+                  <p> Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. </p>
+                </div>
               </div>
             </div>
           </div>

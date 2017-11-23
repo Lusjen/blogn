@@ -2,6 +2,7 @@ import sayHello from './lib/sayHello.js';
 sayHello();
 import './lib/carosel.js';
 import './lib/animation.js';
+import './lib/header.js';
 
 
 // import 'slick-carousel';

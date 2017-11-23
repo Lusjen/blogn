@@ -5,6 +5,13 @@
 img
 	width: 100%
 
+body
+	color: #414141
+	font-size: 12px
+	font-weight: 400
+	font-family: Helvetica,arial,sans-serif
+	line-height: 18px
+
 .maske
 	position: fixed
 	z-index: 2000
@@ -99,7 +106,6 @@ img
 		text-decoration: none
 		display: block
 		color: #b9b9b9
-		// font-family: 'bebas_neue_regularregular'
 		font-size: 16px
 		font-weight: 400
 		padding: 25px 0 27px 28px
@@ -117,49 +123,15 @@ img
 
 .blog-content
 	background-color: #e8603c
-	// max-width: 940px
 	box-shadow: 0 0 0 10px #fff
 	height: 61px
 
 .h1
 	+font
 	color: white
-	// font-family: 'bebas_neue_regularregular'
 	font-size: 24px
 	font-weight: 400
 	padding: 17px 0 18px 17px
-
-// .blog
-// 	overflow: hidden
-// 	position: relative
-// 	margin: 70px 0 24px
-// 	+r(490)
-// 		margin: 120px 0 24px 
-// 	&__left
-// 		position: absolute
-// 		left: 0
-// 	&__right
-// 		position: absolute
-// 		right: 0
-// 		top: 0
-	
-// .block
-// 	height: 61px
-// 	width: 220px
-// 	+r(1400)
-// 		display: none
-// 	&_pink
-// 		background-color: rgba(232, 96, 60, 0.5)
-
-// .blog-content
-// 	background-color: #e8603c
-// 	&__title
-// 		+font
-// 		color: white
-// 		// font-family: 'bebas_neue_regularregular'
-// 		font-size: 24px
-// 		font-weight: 400
-// 		padding: 17px 0 18px 17px
 
 .post
 	margin-bottom: 57px
@@ -189,7 +161,9 @@ img
 	// padding: 16px 0
 	width: 75px
 	height: 75px
-	background: #e8603c
+	background-color: #e8603c
+	background-repeat: no-repeat
+	background-position: center
 	transition: 2s
 	&:hover
 		border-radius: 50%
@@ -197,21 +171,16 @@ img
 	+r(1130)
 		position: static
 		margin-bottom: 20px
-		+r(650)
-			width: 53px
-			height: 53px
-			// padding: 5px 0   
-	&_post-first
-		background: url('../img/icon-first.png') #e8603c  no-repeat center
-	&_post-second
-		background: url('../img/icon2.png') #e8603c  no-repeat center
+	+r(650)
+		width: 53px
+		height: 53px
+		// padding: 5px 0   
+	&_post-copy
+		background-image: url('../img/icon-first.png')
+	&_post-doc
+		background-image: url('../img/icon2.png')
 	&_quotes-white
-		background: url('../img/quotes-white.png')  #e8603c  no-repeat center
-	// &_link
-	// 	background: #e8603c  no-repeat center
-	// 	transition: 2s
-	// 	&:hover
-	// 		transform: rotate(360deg)
+		background-image: url('../img/quotes-white.png')
 
 .icon-link
 	width: 36px
@@ -260,18 +229,16 @@ img
 		text-align: center
 		margin: 0 20px 20px 0
 	&__description
+		+font
 		color: #bababa
 		display: block
 		padding-top: 10px
 		text-decoration: none
-		// span
-		// 	font-weight: 300
 
 .h3
 	+font
 	font-size: 12px
 	font-weight: 400
-	// font-family: 'bebas_neue_regularregular'
 	color: #e8603c
 	&_size
 		font-size: 14px 
@@ -281,24 +248,19 @@ img
 	&__title
 		margin-bottom: 23px
 
-.h2 
+.h2
 	+font
 	font-size: 18px
 	color: #e8603c
 
-.text
-	color: #414141
-	font-size: 12px
-	font-weight: 400 
-	font-family: Helvetica,arial,sans-serif
-	line-height: 18px
-	&__dots
-		color: #8caf2f
-		font-weight: 500
-	&__number
-		font-weight: 500
-	&_margin
-		margin-bottom: 25px
+p
+	margin-bottom: 25px
+	&:last-child 
+		margin-bottom: 0
+
+strong
+	color: #8caf2f
+	font-weight: 500
 
 .features
 	max-width: 218px
@@ -318,10 +280,13 @@ img
 		background: url('../img/bg.jpg') repeat
 
 .link
-	.link__item
+	&__item
 		color: #464646
 		display: block
 		text-decoration: none
+		font-weight: 400
+	&__item_strong
+		font-weight: 500 	 
 
 .gallery
 	font-size: 0
@@ -334,13 +299,6 @@ img
 		background-color: #f3af9d
 		margin: 0 3px 5px 
 
-// .line
-// 	height: 13px
-// 	width: 100%
-// 	margin-top: 50px 
-// 	background: url('../img/bgdarken.jpg') repeat
-// 	float: left
-
 .feedback
 	margin-top: 47px
 	&__text
@@ -349,12 +307,11 @@ img
 		position: relative
 		box-sizing: border-box
 
-.textual
+em
 	color: #474747
-	font-family: Helvetica,arial,sans-serif
 	font-size: 13px
 	font-style: italic
-	line-height: 18px
+
 
 .icon-quotes 
 	position: absolute
@@ -365,7 +322,7 @@ img
 .freebies
 	margin-top: 47px 
 	&__link
-		font-family: Helvetica,arial,sans-serif
+		// font-family: Helvetica,arial,sans-serif
 		display: block
 		text-decoration: none
 		color: #a0a0a0
@@ -389,7 +346,6 @@ img
 		font-size: 14px
 		font-weight: 400  
 		background-color: #f3b29d
-		// font-family: 'bebas_neue_regularregular'
 	.is-active
 		background-color: #e8663c
 
